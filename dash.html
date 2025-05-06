@@ -1,0 +1,51 @@
+
+<php
+require_once __DIR__ . '/database.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCS Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.php">Dashboard</a></li>
+            <li><a href="incidents.php">Incidents</a></li>
+            <li><a href="security_logs.php">Security Logs</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Business Continuity System</h1>
+        <p>Welcome to the dashboard</p>
+    </div>
+</body>
+</html>
+
+<!-- styles.css - Basic styling -->
+<style>
+body { font-family: Arial, sans-serif; background: #f4f4f4; }
+nav ul { list-style: none; padding: 0; display: flex; background: #333; }
+nav ul li { padding: 10px; }
+nav ul li a { color: white; text-decoration: none; }
+.container { padding: 20px; }
+</style>
+
+<!-- scripts.js - Security logging -->
+<script>
+function logSecurityEvent(event) {
+    fetch('log_event.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ event: event })
+    });
+}
+document.addEventListener("DOMContentLoaded", () => {
+    logSecurityEvent("User accessed the dashboard");
+});
+</script>

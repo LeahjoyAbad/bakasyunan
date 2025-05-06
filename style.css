@@ -1,0 +1,126 @@
+/* Improved styles.css */
+
+body {
+    
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #161b22;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #58a6ff;
+    font-weight: 600;
+}
+
+input {
+    width: 50%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #30363d;
+    border-radius: 6px;
+    background: #0d1117;
+    color: #c9d1d9;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #58a6ff;
+}
+
+button {
+    width: 50px;
+    padding: 12px;
+    background: #238636;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #2ea043;
+    transform: scale(1.05);
+}
+
+a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1f6feb;
+}
+
+.dashboard-container {
+    padding: 20px;
+    text-align: center;
+    background: #161b22;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background: #1c2128;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.charts {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chart-box {
+    background: #1c2128;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 45%;
+}
+
+/* Small chart styling */
+.small-chart {
+    width: 200px;
+    height: 150px;
+    background: #161b22;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
